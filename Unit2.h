@@ -158,7 +158,7 @@ class Projects{
 		daymonth =(year - (year / 4) * 4 == 0) ? 305 + day1 : 304 + day1;
 		break;
 	case 12:
-		daymonth =(year - (year / 4) * 4 == 0)? 335 + day1 : 334 + day1;		
+		daymonth =(year - (year / 4) * 4 == 0) ? 335 + day1 : 334 + day1;		
 		break;
 	}
 	return daymonth;
