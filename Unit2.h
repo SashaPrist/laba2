@@ -45,8 +45,7 @@ class Projects{
 
 	void Print(char *temp, TMemo *Memo1){
 		if(strcmp(temp, NameLider) == 0)
-		{
-			//Memo1->Lines->Add("Работает");
+		{			
 			Memo1->Lines->Add(AnsiString("Название: ") + Name);
 			Memo1->Lines->Add(AnsiString("Задание: ") + Task);
 			Memo1->Lines->Add(AnsiString("Сотрудник: ") + NameExec);
@@ -132,44 +131,34 @@ class Projects{
 		daymonth = 31 + day1;
 		break;
 	case 3:
-		if (year - (year / 4) * 4 == 0)daymonth = day1 + 60;
-		else daymonth = 59 + day1;
+		daymonth = (year - (year / 4) * 4 == 0) ? day1 + 60 : 59 + day1;	
 		break;
 	case 4:
-		if (year - (year / 4) * 4 == 0)daymonth = 91 + day1;
-		else daymonth = 90 + day1;
+		daymonth = (year - (year / 4) * 4 == 0) ? 91 + day1 : 90 + day1;	
 		break;
 	case 5:
-		if (year -(year / 4) * 4 == 0) daymonth = 121 + day1;
-		else daymonth = 120 + day1;
+		daymonth = (year - (year / 4) * 4 == 0) ? 121 + day1 : 120 + day1;	
 		break;
 	case 6:
-		if (year - (year / 4) * 4 == 0) daymonth = 152 + day1;
-		else daymonth = 151 + day1;
+		daymonth =(year - (year / 4) * 4 == 0) ? 152 + day1 : 151 + day1;
 		break;
 	case 7:
-		if (year - (year / 4) * 4 == 0) daymonth = 182 + day1;
-		else daymonth=181+day1;
+		daymonth =(year - (year / 4) * 4 == 0) ? 182 + day1 : 181+day1;	
 		break;
 	case 8:
-		if (year - (year / 4) * 4 == 0) daymonth = 213 + day1;
-		else daymonth = 212 + day1;
+		daymonth =(year - (year / 4) * 4 == 0) ? 213 + day1 : 212 + day1;	
 		break;
 	case 9:
-		if (year - (year / 4) * 4 == 0) daymonth = 244 + day1;
-		else daymonth = 243 + day1;
+		daymonth =(year - (year / 4) * 4 == 0) ? 244 + day1 : 243 + day1;	
 		break;
 	case 10:
-		if (year - (year / 4) * 4 == 0) daymonth = 274 + day1;
-		else daymonth = 273 + day1;
+		daymonth =(year - (year / 4) * 4 == 0) ? 274 + day1 : 273 + day1;	
 		break;
 	case 11:
-		if (year - (year / 4) * 4 == 0) daymonth = 305 + day1;
-		else daymonth = 304 + day1;
+		daymonth =(year - (year / 4) * 4 == 0) ? 305 + day1 : 304 + day1;
 		break;
 	case 12:
-		if (year - (year / 4) * 4 == 0) daymonth = 335 + day1;
-		else daymonth = 334 + day1;
+		daymonth =(year - (year / 4) * 4 == 0)? 335 + day1 : 334 + day1;		
 		break;
 	}
 	return daymonth;
